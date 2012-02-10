@@ -20,7 +20,7 @@ var zombieParts = function () {
 var zombieDown = 1,
 	zombieToGo = numZombies - 1
 ;
-
+var noZombies = true;
 
 
 // here's the story...
