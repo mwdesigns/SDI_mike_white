@@ -19,6 +19,7 @@ var zombieParts = function () {
 var zombieDown = 1,
 	zombieToGo = numZombies - 1
 ;
+// boolean
 var noZombies = true;
 
 
@@ -27,10 +28,12 @@ console.log(
 zombieHunter + " walked out of the convenient store just in time to see " + numZombies +  " zombies coming toward him. But he could remember if he was supposed to aim for the " + bodyParts + "."
 );
 
+// for loop
 for (var partNumber = 0; partNumber < bodyParts.length; partNumber++) {
 	zombieParts()
 }
 
+// while loop
 while (numZombies > 0) {
 	console.log("There's " + zombieDown + " zombies down and " + zombieToGo + " zombies to go.");
 	numZombies--;
@@ -38,10 +41,15 @@ while (numZombies > 0) {
 	zombieToGo--;
 	
 };
-// need if statement here
-console.log("Take That! No more zombies.");
 
-//json handler
+// if statement
+if (noZombies = 1) {
+console.log("Take That! No more zombies.");
+} else {
+console.log("Oh NO! there are more zombies.");
+}
+
+//json handler with for loop
 var handleData = function (json) {
 	for (var i = 0; i < json.key.length; i++){
 		var key = json.key[i];
