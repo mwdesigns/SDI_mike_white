@@ -38,4 +38,14 @@ while (numZombies > 0) {
 	zombieToGo--;
 	
 };
+// need if statement here
 console.log("Take That! No more zombies.");
+
+//json handler
+var handleData = function (json) {
+	for (var i = 0; i < json.key.length; i++){
+		var key = json.key[i];
+		console.log("obj: " + key.obj + ", obj2: " + key.obj2 + ", obj3: " + key.obj3);
+	}
+};
+handleData(json);
